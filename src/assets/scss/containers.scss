@@ -1,0 +1,25 @@
+
+// -bigger-container-
+.bigger-container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+    .bigger-container {
+        padding-left: 10.7%;
+        padding-right: 10.7%;
+    }
+}
+
+// -spin-container-
+.spin-container {
+    margin: 10px 0;
+    margin-bottom: 10px;
+    padding: 0px 50px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+

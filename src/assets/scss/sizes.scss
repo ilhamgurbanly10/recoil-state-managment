@@ -1,0 +1,31 @@
+.normal-min-width {
+    min-width: 250px !important;
+}
+
+@media (min-width: 576px) {
+    .normal-min-width {
+        min-width: 300px !important;
+    }
+}
+
+.max-width-1 {
+    max-width: 600px;
+}
+
+.max-width-2 {
+    max-width: 700px;
+}
+
+.small-width {
+    width: calc(100% - 70px);
+}
+
+.height-1 {
+    height: 10vw;
+}
+
+.scroll-height {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
