@@ -1,8 +1,8 @@
-import { BackToTopBtn } from '../components/elements/Buttons';
-import Header from '../components/header/Header';
-import Footer from '../components/footer/Footer';
+// import { BackToTopBtn } from '../components/elements/Buttons';
+// import Header from '../components/header/Header';
+// import Footer from '../components/footer/Footer';
 import Head from '../components/Head';
-import FlashProgress from '../components/flash/Progress';
+// import FlashProgress from '../components/flash/Progress';
 import React, { useEffect, useState } from 'react';
 
 const Layout = (props) => {
@@ -16,11 +16,11 @@ const Layout = (props) => {
   return (
     <React.Fragment>  
       <Head/>
-      <Header/>
+      {/* <Header/> */}
       {props.children}
-      <BackToTopBtn/>
-      <Footer/>
-      {!isLoaded && <FlashProgress /> }
+      {/* <BackToTopBtn/> */}
+      {/* <Footer/> */}
+      {/* {!isLoaded && <FlashProgress /> } */}
     </React.Fragment>
   )
 };

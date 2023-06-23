@@ -16,15 +16,40 @@ import {I18nextProvider} from "react-i18next";
 import i18next from "i18next";
 import { useState } from "react";
 
+import React from 'react';
+
+// REcoil istifade etmek isteyen komponentlerin uzerinde mutleq RecoilRoot olmalidir, ona 
+// gore de onun en yaxsi yeri App.js dir
+
+// 1) Yukleme
+
+// npm install recoil 
+
+// 2) documentation:
+
+// https://recoiljs.org
+
+// https://recoiljs.org/docs/introduction/getting-started 
+
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from 'recoil';
+
 
 function App() {
 
   return (
     <I18nextProvider i18n={i18next}>
       <BrowserRouter>
-        <Layout>
-            <Routing/>
-        </Layout>
+        <RecoilRoot>
+          <Layout>
+              <Routing/>
+          </Layout>
+        </RecoilRoot>
       </BrowserRouter>
     </I18nextProvider>  
   );
